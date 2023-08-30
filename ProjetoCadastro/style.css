@@ -2,6 +2,7 @@ form > input{
     display: block;
     margin-bottom: 20px;
     padding: 5px;
+    width: 250px;
 }
 
 form > input:focus{
@@ -22,6 +23,7 @@ form > label, legend, button{
 }
 
 fieldset{
+    
     margin-bottom: 20px;
     width: 350px;
 }
@@ -41,11 +43,13 @@ button{
 button:hover{
     background-color: white;
     color: black;
+    transition: 1s;
+    cursor:pointer;
 }
 
 /* regra para atributo 
 elemento[atributo="valor do atributo"]{
-    
+
 }
 
 
