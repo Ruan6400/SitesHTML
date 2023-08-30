@@ -1,0 +1,48 @@
+form > input{
+    display: block;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+form > input:focus{
+    border: 2px solid;
+    background-color: #ffc;
+}
+
+form > input:hover{
+    border: 2px solid black;
+}
+
+h1, label, legend, button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form > label, legend, button{
+    font-weight: bold;
+}
+
+fieldset{
+    margin-bottom: 20px;
+    width: 350px;
+}
+
+button{
+    color: white;
+    background-color: black;
+    border: 2px solid;
+    padding: 20px;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* regra para atributo 
+elemento[atributo="valor do atributo"]{
+    
+}
+
+
+*/

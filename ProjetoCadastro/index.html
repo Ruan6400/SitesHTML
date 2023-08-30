@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Cadastre-se!</h1>
+    <form action="http://hub.fatecrl.edu.br/sobrino/recebe-v2.php" method="post"> <!--Método Post-->
+            <label for="Email">E-mail</label>
+            <input type="email" id="Email" name="Email" placeholder="Seu e-mail" required> <!--Ligação entre For e ID-->
+            <label for="Senha">Senha</label>
+            <input type="password" id="Senha" name="Senha" placeholder="Sua senha" minlength="8" maxlength="8" required> <!--Minlenght, Maxlenght-->
+
+
+       
+        <fieldset> <!--Não pode botar dentro do parágrafo-->
+                <legend>Deseja assinar o nosso boletim?</legend>
+                <input type="radio" id="y" name="opcao" value="Sim" required> <!-- Um mesmo name pode utilizar apenas 1 required-->
+                <label for="y">Sim</label>
+                <input type="radio" id="n" name="opcao" value="Nao">
+                <label for="n">Não</label>
+
+        </fieldset>
+
+            <!--<input type="submit" value="Confirmar">-->            
+            <button>Confirmar</button>
+    </form>    
+</body>
+</html>
