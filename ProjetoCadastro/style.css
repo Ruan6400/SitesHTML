@@ -26,6 +26,10 @@ fieldset{
     width: 350px;
 }
 
+fieldset > input[value="Nao"]{
+    margin-left: 20px;
+}
+
 button{
     color: white;
     background-color: black;
