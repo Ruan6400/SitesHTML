@@ -1,5 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
 
+/* usar "*.marca" por exemplo fará um reset em todos os elementos da classe marca*/
+
+* { /*seletor universal, utilizado para CSS Reset (começar com valores iniciais)*/
+/*    margin: 0;
+    padding: 0; */
+}
+
+h2~p { /*combinador geral de irmãos*/
+    background-color: brown;
+}
+
+p+p{ /* seletor de irmão adjacente */
+    background-color: rgb(0, 255, 76);
+}
+
+li:first-child, li:last-child{
+    background-color: aquamarine;
+}
+
+li:nth-child(odd) { /*posição específica da criança, pode ser usado o número, odd ou even*/
+    background-color:rgb(0, 204, 255)
+}
+
 body{
     font-family:'Josefin Sans', 'Arial Narrow', Arial, sans-serif;
 }
@@ -56,11 +79,32 @@ p{
     margin-left: 20%;
 }
 
-.negrito{
-    font-weight: 700;
-}
-
 ul{
     margin-left: 20%;
     list-style: armenian;
+}
+
+/* Seletores Avançados */
+
+strong{
+    background-color: blue;
+}
+
+/* Descendente e filhos tem o mesmo valor (0,0,2) então a ordem determina quem vai funcionar */
+
+address strong{ /*descendente*/
+    background-color: aqua;
+}
+
+address > strong{ /*filhos*/
+    background-color: rgb(0, 95, 95); 
+}
+
+ul strong{
+    background-color: aquamarine;
+}
+
+/*se tiver id, ficaria ul#lista-cursos > li > strong*/
+ul > li > strong{ /* "ul > strong" não funciona pois a descendencia tem de ser direta */
+    background-color: blueviolet;
 }
