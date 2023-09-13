@@ -1,0 +1,43 @@
+p span+span{
+    color: blue;
+}
+
+#i710{
+    background-color: #bbb;
+}
+
+em[id^="i1"]{
+
+    color:blueviolet;
+}
+
+span+span+em{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #608;
+}
+
+.c909::after{
+    content: "910";
+    margin-left: 28px;
+    border: 1px blue solid;
+}
+
+[href="#"]{
+    color: white;
+}
+
+h1{
+    display: inline-block;
+}
+
+h1+p span+span{
+    background-color: rgb(255, 0, 212);
+}
+
+p span+span{
+    color: cyan;
+}
+
+p>span[class]{
+    font-family: 'Times New Roman', Times, serif;
+}

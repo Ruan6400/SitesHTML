@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
+body{
+    font-family:'Josefin Sans', 'Arial Narrow', Arial, sans-serif;
+}
+
+#cabecalho{
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+h2{
+padding: 10px;
+background-color: #999;
+border-radius: 50px;
+margin: 40px;
+}
+
+img{
+    border-radius: 100px 0px 100px 0px;
+    border-style: double;
+    border-width: 6px;
+    margin: 0%;
+    float:left;
+    margin-left: 2%;
+    
+}
+
+h3{
+margin-left: 20%;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+color:black;
+}
+
+a:hover{
+    cursor:grabbing;
+    color:#fff;
+    background-color: #999;
+}
+
+address{
+    margin-left: 20%;
+    background-color: #ddd;
+    border-radius: 20px;
+    width: 500px;
+    padding: 10px;
+    box-shadow: 0.3em 0.3em #4d4d4d;
+}
+
+p{
+    margin-left: 20%;
+}
+
+ul{
+    margin-left: 20%;
+    list-style: armenian;
+}
+
+
+
+
+
+
+/* Seletores Avançados
+
+strong{
+    background-color: blue;
+}
+
+Descendente e filhos tem o mesmo valor (0,0,2) então a ordem determina quem vai funcionar
+
+address strong{ descendente
+    background-color: aqua;
+}
+
+address > strong{ filhos diretos
+    background-color: rgb(0, 95, 95); 
+}
+
+ul strong{
+    background-color: aquamarine;
+}
+
+se tiver id, ficaria ul#lista-cursos > li > strong
+ul > li > strong{ /* "ul > strong" não funciona pois a descendencia tem de ser direta
+    background-color: blueviolet;
+}
+
+
+usar "*.marca" por exemplo fará um reset em todos os elementos da classe marca
+
+* { seletor universal, utilizado para CSS Reset (começar com valores iniciais)
+        margin: 0;
+        padding: 0; 
+    }
+    
+    h2~p { combinador geral de irmãos
+        background-color: brown;
+    }
+    
+    p+p{ seletor de irmão adjacente 
+        background-color: rgb(0, 255, 76);
+    }
+    
+    li:first-child, li:last-child{
+        background-color: aquamarine;
+    }
+    
+    li:nth-child(odd) { posição específica da criança, pode ser usado o número, odd ou even
+        background-color:rgb(0, 204, 255)
+    }
+
+    p::first-letter{
+        background-color: aquamarine;
+        background-blend-mode: darken;
+        font-size: 100px;
+        font-weight: bold;
+        margin: 10px;
+        padding: 50px;
+    }
+    
+
+    p:first-of-type::first-letter{
+        	background-color: #4d4d4d;
+    }
+
+    body>h1+h2+img+p::first-letter{
+        background-color: #f00;
+    }
+*/
+
+h2::before{
+    content: "[Novo!]";
+    color: red;
+    font-size: 15px;
+    margin: 30px;
+}
+a[href^="http"]::after{
+    content: url(extlinkicon.png);
+}

@@ -1,0 +1,22 @@
+[710] usando um combinador de descendente (ok)
+
+[710] usando qualquer seletor/combinador à sua escolha (ok)
+
+[101] usando qualquer seletor/combinador à sua escolha (ok)
+
+[810] usando qualquer seletor à sua escolha (ok)
+
+[210] e [310], na mesma regra CSS (dica: use agrupamento), através de seletor de atributos (ok)
+
+[909] insira, via pseudo-elemento, o 910 (::after) (ok)
+
+[010] via combinador de descendente (ok)
+
+[010] via combinador de irmãos adjacentes (ok)
+
+<h1> via seletor de tipo (ok)
+
+[010] via seletor com combinador de filhos (ok)
+
+
+0,2,1
