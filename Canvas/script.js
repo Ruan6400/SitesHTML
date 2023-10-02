@@ -2,6 +2,10 @@ var px=0;
 var dir=1;
 var py=0;
 var dy=1;
+var Direita=false;
+var Esquerda=false;
+
+var playerX = 0;
 
 function GO(){
     var TelaW=700;
@@ -16,11 +20,17 @@ function GO(){
     if(py>350||py<0){
         dy=dy*-1;
     }
+    if(Direita){
+        playerX+=10;
+    }
+    if(Esquerda){
+        playerX-=10;
+    }
     ctx.clearRect(0,0,300,150);
     ctx.fillStyle = "#00ffff";
     ctx.fillRect(0,0,TelaW,TelaH);
     ctx.fillStyle = "#ff0000";
-    ctx.fillRect(0,0,50,50);
+    ctx.fillRect(playerX,0,50,50);
     ctx.fillStyle = "#00ff00";
     ctx.fillRect(px,py,50,50);
     ctx.strokeStyle = "#000";
@@ -71,6 +81,28 @@ function sol(ctx){
     ctx.fill();
 }
 
+function TeclaDw(e){
+    switch(e.keyCode){
+        case 39:
+            Direita=true;
+            break;
+        case 37:
+            Esquerda=true;
+            break;
+    }
+}
+function TeclaUp(e){
+    switch(e.keyCode){
+        case 39:
+            Direita=false;
+            break;
+        case 37:
+            Esquerda=false;
+            break;
+    }
+}
 
 
+document.addEventListener("keydown",TeclaDw);
+document.addEventListener("keyup",TeclaUp);
 document.addEventListener("DOMContentLoaded",GO);
