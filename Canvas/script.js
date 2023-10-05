@@ -132,25 +132,10 @@ for(var i=0;i<quant;i++){
      ctx.moveTo(500,90);
      ctx.lineTo(530,90);
      ctx.stroke();
+     var size= 25;
+     Janela(480,220,size,size,ctx);
+     Janela(600,220,size,size,ctx);
      
-     
-  
-     //janelas 
-     ctx.fillStyle="#f00"; 
-     ctx.fillRect(480,220,50,50); 
-     ctx.strokeRect(480,220,50,50); 
-  
-     ctx.fillStyle="#0f0"; 
-     ctx.fillRect(540,220,50,50); 
-     ctx.strokeRect(540,220,50,50); 
-  
-     ctx.fillStyle="#00f"; 
-     ctx.fillRect(480,280,50,50); 
-     ctx.strokeRect(480,280,50,50); 
-  
-     ctx.fillStyle="#ff0"; 
-     ctx.fillRect(540,280,50,50); 
-     ctx.strokeRect(540,280,50,50); 
   
      //porta
      ctx.fillStyle="#0de";
@@ -159,7 +144,22 @@ for(var i=0;i<quant;i++){
      ctx.beginPath(); 
      ctx.arc(610,350,5,0,2*Math.PI); 
      ctx.stroke(); 
- } 
+ }
+ 
+ function Janela(X,Y,larg,altu,ctx) {
+     ctx.fillStyle="#f00"; 
+     ctx.fillRect(X,Y,larg,altu); 
+     ctx.strokeRect(X,Y,larg,altu); 
+     ctx.fillStyle="#0f0"; 
+     ctx.fillRect(X+(Math.round(larg*1.2)),Y,larg,altu); 
+     ctx.strokeRect(X+(Math.round(larg*1.2)),Y,larg,altu);
+     ctx.fillStyle="#00f";
+     ctx.fillRect(X,Y+(Math.round(1.2*altu)),larg,altu);
+     ctx.strokeRect(X,Y+(Math.round(1.2*altu)),larg,altu);
+     ctx.fillStyle="#ff0";
+     ctx.fillRect(X+(Math.round(1.2*larg)),Y+(Math.round(1.2*altu)),larg,altu);
+     ctx.strokeRect(X+(Math.round(1.2*larg)),Y+(Math.round(1.2*altu)),larg,altu);
+ }
   
  function sol(ctx){ 
      ctx.fillStyle="#ff0"; 
