@@ -22,10 +22,10 @@ for(var i=0;i<quant;i++){
      var TelaH=canvas.offsetHeight;  
      px+=dir; 
      py+=dy; 
-     if(px>700||px<0){ 
+     if(px>TelaW-50||px<0){ 
          dir=dir*-1; 
      } 
-     if(py>350||py<0){ 
+     if(py>TelaH-50||py<0){ 
          dy=dy*-1; 
      } 
      if(Direita){ 
@@ -34,8 +34,8 @@ for(var i=0;i<quant;i++){
      if(Esquerda){ 
          playerX-=10; 
      } 
-     ctx.clearRect(0,0,TelaW,TelaH); 
-     ctx.fillStyle = "#00ffff"; 
+     //ctx.clearRect(0,0,TelaW,TelaH); 
+     ctx.fillStyle = "#20ffff"; 
      ctx.fillRect(0,0,TelaW,TelaH); 
      ctx.fillStyle = "#005"; 
      ctx.fillRect(px,py,50,50); 
@@ -95,7 +95,6 @@ for(var i=0;i<quant;i++){
      if(timer==200){
         for(var i=0;i<quant;i++){
             pxSmoke[i]=Math.round((Math.random()*30)+500);
-            pySmoke[i]=75-(i*10);
         }
         timer=0;
      }
