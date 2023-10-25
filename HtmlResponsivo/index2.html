@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        header{
+            background-color: #0ff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        main{
+            background-color: #f66;
+            flex: 0.85;
+        }
+        aside{
+            background-color: #f6f;
+            flex: 0.15;
+        }
+        footer{
+            background-color: #6f6;
+        }
+        ul{
+            display: flex;
+            column-gap: 20px;
+        }
+        li{
+            list-style: none;
+            padding: 10px;
+        }
+        img{
+            border:1px solid black;
+            width: 240px;
+            height: 100px;
+            object-fit: cover;
+        }
+        main,aside{
+            padding: 10px;
+        }
+        header,footer{
+            flex-basis: 100%;
+        }
+
+        /*
+        22.5+0.5=23
+
+        72.5+0.5=73
+
+        73+23=96
+        */
+    </style>
+</head>
+<body>
+    <header>
+        <img src="fateclogo.png" alt="Faculdade de Tecnologia" width="240" height="240">
+        <nav>
+            <ul>
+                <li><a>Link1</a></li>
+                <li><a>Link1</a></li>
+                <li><a>Link1</a></li>
+                <li><a>Link1</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>Main
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed sem dictum libero malesuada blandit id ac leo. Vivamus id nunc sit amet enim porttitor viverra. Nullam finibus turpis metus, sit amet commodo nisi fermentum vel. Vivamus tristique, ipsum quis varius pellentesque, tortor ex ultricies lacus, eu bibendum mauris ante vel arcu. Donec et ligula metus. Morbi vulputate porttitor placerat. Fusce a accumsan neque. Mauris sed condimentum justo. Quisque sagittis, arcu eu sagittis imperdiet, dolor felis ultrices lorem, a mollis justo orci at ligula. Mauris finibus, mauris a tincidunt ullamcorper, tellus ex convallis leo, at dignissim odio nibh id dui. Curabitur varius, urna non gravida commodo, odio mi aliquam diam, nec euismod tortor sapien nec ex. Morbi vel quam sed nunc pretium suscipit. Phasellus lacinia eget libero vitae dapibus. Praesent vulputate magna at diam interdum euismod. Duis sit amet leo tempor felis euismod gravida.
+        </p>
+    </main>
+    <aside>Aside
+        <p>
+            Nullam luctus libero sit amet risus tempus mattis. Quisque neque dui, placerat a eros vel, viverra tincidunt arcu. Duis vitae mollis erat, sed pharetra nibh. Nam tristique feugiat ultrices. Donec et ante efficitur, viverra diam at, porttitor nulla. Nam aliquam leo vitae hendrerit tempus. Sed et pellentesque massa. Vivamus ex leo, vestibulum a sodales at, scelerisque vel lorem. Nullam hendrerit mi libero, viverra commodo elit blandit eu. Pellentesque non feugiat elit. Nulla sit amet condimentum lacus, id vulputate lectus. Mauris vitae neque nec lectus laoreet pharetra eu id magna. Phasellus condimentum ornare turpis ac vulputate. Proin non porta tellus.
+        </p>
+        <p>In suscipit non ipsum eget dignissim. Nullam molestie massa a ex lobortis, vel bibendum urna efficitur. Fusce nulla orci, pellentesque sed quam sit amet, dignissim ultrices quam. Maecenas sagittis vehicula justo, et consequat lorem pulvinar quis. Cras ultricies, erat et dignissim tristique, leo lectus aliquam risus, quis mollis elit sapien vel libero. Nullam vitae nulla ac augue gravida fermentum. Vestibulum eleifend elementum magna ac feugiat. Phasellus malesuada sed nisi nec ornare. Morbi euismod in dui vel lobortis. Praesent dui risus, cursus sit amet rutrum in, accumsan ac tellus. Donec id venenatis nisl, et ultricies ligula. Maecenas ultrices lobortis purus vestibulum vestibulum.</p>
+    </aside>
+    <footer>Footer</footer>
+</body>
+</html>
