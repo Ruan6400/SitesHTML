@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>LayoutTeste</title>
+    <style>
+        body{
+            margin: 0 auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-repeat: repeat-x;
+            /*aumentar o tamanho da página*/
+            min-height: 300vh;
+        }
+        header{
+            color: white;
+            background-image: url(grunge.jpg);
+            padding: 20px;
+        }
+        h1{
+            background-image: url(logo-fatecrl.png);
+            height: 65px;
+            width: 145px;
+            padding: 0;
+            margin: 0;
+            text-indent: -9999px;
+        }
+        div{
+            width: 150px;height:150px;
+            border: 1px solid black;
+        }
+        div:first-of-type{
+            background-color: #090;
+            position: relative;
+            left: 100px;
+            top:50px;
+            /* position: static; ocupe a posição inicial, é a opção deafult
+            position: relative. pode ser deslocado em relação a posição que está.
+            absolute: fica no 0,0 da caixa que ele esta inicialmente
+            fixed: fica preso na posição da tela, é bom pra usar menus que fiquem na tela mesmo scrollando pra baixo
+            z-index: joga as coisas pra frente ou pra trás no documento
+            position: sticky = a posição dele vai subindo conforme a rolagem, porem quando chega num certo limite (definido por top,left,bottom,right), ele fica fixo
+            */
+        }
+        div:nth-of-type(2){
+            background-color: #70f;
+            position: sticky;
+            top:50px;
+        }
+        
+        div:nth-of-type(3){
+            background-color: #aa8;
+            z-index: -10;
+        }
+        div:nth-of-type(4){
+            background-color: #7ff;
+            position: absolute;
+            top: 450px;
+            right:0;
+        }
+        div:nth-of-type(5){
+            background-color: #f56;
+            position: fixed;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FATEC/RL</h1>
+    </header>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
